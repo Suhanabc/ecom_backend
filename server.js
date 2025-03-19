@@ -5,10 +5,11 @@ const router = require('./routes/authRoutes');
 const cartrouter = require('./routes/cartRoutes');
 const app = express();
 
-const allowedOrigins = ["ecom-fronted-taupe.vercel.app",
+const allowedOrigins = ["'https://ecom-fronted-taupe.vercel.app'",
     "ecom-fronted-git-main-suhanas-projects-3ffb18f1.vercel.app",
     "ecom-fronted-g5m8a03sf-suhanas-projects-3ffb18f1.vercel.app",
-    "ecom-fronted-suhanas-projects-3ffb18f1.vercel.app"
+    "ecom-fronted-suhanas-projects-3ffb18f1.vercel.app",
+    "https://ecom-backend-h26w.onrender.com/auth/signup"
 ]
 app.use(cors({
     origin: function(origin, callback) {
