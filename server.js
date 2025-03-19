@@ -5,7 +5,7 @@ const router = require('./routes/authRoutes');
 const cartrouter = require('./routes/cartRoutes');
 const app = express();
 
-const allowedOrigins = ["ecom-fronted-9zcjiw9h4-suhanas-projects-3ffb18f1.vercel.app", "ecom - fronted - taupe.vercel.app"]
+const allowedOrigins = ["ecom-fronted-taupe.vercel.app", "ecom-fronted-git-main-suhanas-projects-3ffb18f1.vercel.app", "ecom-fronted-g5m8a03sf-suhanas-projects-3ffb18f1.vercel.app"]
 app.use(cors({
     origin: function(origin, callback) {
         if (!origin || allowedOrigins.includes(origin)) {
